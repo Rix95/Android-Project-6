@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">ArticleSearch</string>
+    <string name="app_name">Water Log</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_favorites">test1</string>
+    <string name="text_schedules">test2\n\n</string>
+    <string name="text_music">test3\n</string>
 </resources>

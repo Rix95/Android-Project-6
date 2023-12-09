@@ -5,59 +5,55 @@
     android:id="@+id/detailLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".AddItemActivity">
 
-    <ImageView
-        android:id="@+id/mediaImage"
-        android:layout_width="0dp"
+    <EditText
+        android:id="@+id/dateEntry"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/mediaTitle"
-        android:layout_width="0dp"
+    <EditText
+        android:id="@+id/quantityEntry"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:text="Title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:textColor="#000000"
-        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="quantity"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaImage" />
+        app:layout_constraintTop_toBottomOf="@+id/dateEntry" />
 
-    <TextView
-        android:id="@+id/mediaByline"
-        android:layout_width="0dp"
+    <EditText
+        android:id="@+id/unitEntry"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:text="Byline"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="#000000"
-        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="unit"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/quantityEntry" />
 
-    <TextView
-        android:id="@+id/mediaAbstract"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:text="Abstract"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        android:textColor="#000000"
+        android:layout_marginBottom="272dp"
+        android:text="Save Entry"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaByline" />
-
+        app:layout_constraintTop_toBottomOf="@+id/unitEntry" />
 </androidx.constraintlayout.widget.ConstraintLayout>
